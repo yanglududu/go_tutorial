@@ -21,7 +21,7 @@ func main() {
 		go checkLink(link, c)
 	}
 
-	for l := range c {
+	for l := r ange c {
 		go func(link string){
 			time.Sleep(time.Second)
 			checkLink(link, c)
