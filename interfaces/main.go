@@ -6,8 +6,8 @@ type bot interface {
 	getGreeting() string
 }
 
-type englishBot struct {}
-type spanishBot struct {}
+type englishBot struct{}
+type spanishBot struct{}
 
 func main() {
 	eb := englishBot{}
@@ -15,15 +15,14 @@ func main() {
 
 	printGreeting(eb)
 	printGreeting(sb)
-
 }
 
 func (eb englishBot) getGreeting() string {
-	return "hi there!"
+	return "Hi There!"
 }
 
 func (sb spanishBot) getGreeting() string {
-	return "hola!"
+	return "Hola!"
 }
 
 func printGreeting(b bot) {
